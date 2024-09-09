@@ -256,16 +256,16 @@
     <canvas id="particleCanvas"></canvas> <!-- Добавленный элемент canvas -->
     <div>
         <select id="fieldSelect">
-            <option value="6x15">Поле 6x15</option>
-            <option value="3x6">Поле 3x6</option>
-            <option value="2x3">Поле 2x3</option>
-            <option value="4x9">Поле 4x9</option>
-            <option value="5x12">Поле 5x12</option>
+            <option value="6x15">Field 6x15</option>
+            <option value="3x6">Field 3x6</option>
+            <option value="2x3">Field 2x3</option>
+            <option value="4x9">Field 4x9</option>
+            <option value="5x12">Field 5x12</option>
         </select>
     </div>
     <div class="game-board" id="gameBoard"></div>
-    <button class="play-button">play</button>
-    <button class="reset-button">reset</button>
+    <button class="play-button">PLAY</button>
+    <button class="reset-button">RESET</button>
 </div>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
 <script>
@@ -387,7 +387,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     playButton.addEventListener('click', () => {
         if (dotsCount >= maxDots) {
-            alert('Игра окончена!');
+            alert('Game over!');
             return;
         }
 
